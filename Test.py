@@ -1,4 +1,6 @@
-import RPi.GPIO as GPIO
+from picamera2 import Picamera2, Preview
 import time
 
-print("test")
+camera = Picamera2()
+time.sleep(5)
+camera.capture_file("test.jpg")
