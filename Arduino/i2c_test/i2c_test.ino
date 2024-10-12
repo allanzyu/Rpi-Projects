@@ -12,7 +12,7 @@
 
 // LED on pin 13
 const int ledPin = 13;
-const char test = 'A';
+const char test = '?';
 
 void setup() {
 
