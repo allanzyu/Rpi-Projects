@@ -22,8 +22,8 @@ while numb == 1:
 		bus.write_byte(addr, 0x1) # switch it on
 	elif ledstate == "0":
 		bus.write_byte(addr, 0x0) # switch it off
+	elif ledstate =="2":
+		pin = chr(bus.read_byte(addr))
+		print ("Arduino sends: " + str(pin)) 	
 	else:
 		numb = 0
-
-pin = chr(bus.read_byte(addr))
-print ("Arduino sends: " + str(pin))
